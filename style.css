@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* to move the webpage smoothly */
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(85,85,85);
+}
+
+/* Transition */
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* NAVIGATION */
+
+.navLinks{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:17vh;
+}
+
+a{
+    color: black;
+    text-decoration-color: white;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+
+.logo{
+    font-size: 2rem;
+    
+}
+.loho:hover{
+    cursor: default;
+}
