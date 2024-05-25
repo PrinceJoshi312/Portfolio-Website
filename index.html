@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="media.css">
 </head>
 <body>
+
+    <!-- DESKTOP-NAV -->
+
     <nav id="Main-nav">
         <div class="logo">Prince Joshi</div>
         <div>
             <ul class="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#experiance">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- MOBILE-NAV -->
+
     <nav id="mobile-nav">
         <div class="logo">Prince Joshi</div>
         <div class="hamburgerMenu">
@@ -37,10 +43,194 @@
         </div>
     </nav>
 
+    <!-- PROFILE -->
+
     <section id="profile">
         <div class="profilepic">
-            <img scr="" alt="Prince Joshi profile picture"
+            <img src="./asserts/profile.png" alt="Prince Joshi profile picture"/>
 
+        </div>
+        <div class="sectionText">
+            <p1 class="ST-p1">Hello, I m</p1>
+            <h1 class="name">Prince Joshi</h1>
+            <p1 class="role">Developer</p1>
+            <div class="btnContainer">
+                <button class="CVbtn" onclick="window.open('./asserts/PrinceJoshiCV.pdf')">
+                    Download CV</button>
+                <button class="contactbtn" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="socialContainer">
+                <img class="icon" src="./asserts/linkedin.png" alt="My Linkedin profile" onclick="location.href='https://linkedin.com'"/>
+                <img class="icon" src="./asserts/github.png" alt="My github profile" onclick="location.href='https://github.com/PrinceJoshi312'"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="About">
+        <p class="ST-p1">Get to know more</p>
+        <h1 class="name">About me</h1>
+        <div class="sectionContainer">
+                <div class="profilepic">
+                <img src="./asserts/profile.png" alt="profilePic" class="aboutPic">
+                </div>
+            <div class="aboutDetailsCon">
+                <div class="aboutContainer">
+                    <div class="detailsContainer">
+                        <img src="./asserts/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p> 2+ years <br>AI Developer</p>
+                    </div>
+                    <div class="detailsContainer">
+                        <img src="./asserts/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Persuing B-Tech. CSE </p>
+                    </div>
+                </div>
+            
+                <div class="textContainer">
+                    <br><br>
+                    <p>Hello! I'm Prince Joshi, an AI developer passionate about pushing the boundaries of technology to solve real-world problems. With expertise in AI and machine learning, I thrive on exploring innovative solutions across various domains. I'm committed to continuous learning and collaboration, aiming to make a meaningful impact with my work. Let's innovate together and shape the future with AI!</p>
+                </div>
+            </div>
+        </div> 
+        <img src="./asserts/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'"">
+    </section>
+
+<!-- Experiance -->
+
+    <section id="experiance">
+        <p class="ST-p1">Explore My</p>
+        <h1 class="name">Experiance</h1>
+        <div class="expDetailsCon">
+            <div class="aboutContainer">
+                <div class="detailsContainer">
+                    <h2 class="expSubTitle">AI Development</h2>
+                    <div class="articleContainer">
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Tensorflow</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Keras</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Kaggle</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Pandas</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>NLTK</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>NumPy</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Scikit-learn</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="detailsContainer">
+                    <h2 class="expSubTitle">Web Development</h2>
+                    <div class="articleContainer">
+                       
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Express  JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3> Mongo DB</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asserts/checkmark.png" alt="Experiance icon" class="icon">
+                            <div>
+                                <h3>My - SQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./asserts/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"">
+    </section>
+
+<!-- Project section -->
+
+    <section id="projects">
+        <p class="ST-p1">Browse My Recent</p>
+        <h1 class="name">Projects</h1>
+        <div class="expDetailsCon">
+            <div class="detailsContainer colorContainer">
+                <div class="articleContainer">
+                    <img src="./asserts/"
+                </div>
+            </div>
         </div>
     </section>
     <script src="script.js"></script>

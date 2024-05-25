@@ -138,3 +138,200 @@ a:hover{
 
 
 /* SECTIONS */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.sectionContainer{
+    display: flex;
+}
+
+/* PROFILE SELECTION */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.profilepic{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.sectionText{
+    align-self: center;
+    text-align: center;
+}
+
+.sectionText p{
+    font-weight: 600;
+}
+
+.ST-p1{
+    text-align: center;
+    color: grey;
+}
+
+.role{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.name{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socialContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICON */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.CVbtn, .contactbtn{
+    font-weight: 600;
+    transition: all300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    gap: 1rem;
+}
+
+.CVbtn:hover, .contactbtn :hover{
+    cursor: pointer;
+}
+
+.CVbtn, .contactbtn:hover{
+    background: rgb(53,53,53);
+    color: white;
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.CVbtn:hover{
+    background: rgb(0,0,0);
+}
+
+.contactbtn{
+    background: none;
+}
+
+
+/* ABOUT */
+
+#About{
+    position: relative;
+}
+
+.aboutContainer{
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: rem;
+}
+
+.aboutDetailsCon{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutContainer, .aboutDetailsCon{
+    display: flex;
+}
+
+.aboutPic{
+    border-radius: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.detailsContainer{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.sectionContainer{
+    gap: 4rem;
+    height: 80%;
+}
+
+.profilepic{
+    height: 400px;
+    width: 400px;
+    margin: auto 0 ;
+}
+
+/* Experiance section */
+
+#experiance{
+    position: relative;
+}
+
+.expSubTitle{
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.expDetailsCon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.articleContainer{
+    display: flex;
+    text-align:initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    -ms-flex-align: initial;
+    gap: 1rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
