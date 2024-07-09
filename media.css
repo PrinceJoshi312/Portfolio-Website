@@ -5,4 +5,99 @@
     #mobile-nav{
         display: flex;
     }
+    #experiance,
+  .expDetailsCon {
+    margin-top: 2rem;
+  }
+  #profile,
+  .sectionContainer {
+    display: block;
+  }
+  .icon arrow {
+    display: none;
+  }
+  section,
+  .sectionContainer {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .profilepic {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .aboutContainers {
+    margin-top: 0;
+  }
 }
+
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .aboutContainers,
+    .contact-info-upper-container,
+    .btnContainer {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .navLinks li a {
+      font-size: 1rem;
+    }
+    .expSubTitle{
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .navLinks {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .profilepic {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    .role{
+      font-size: 1.25rem;
+    }
+    .name {
+      font-size: 2rem;
+    }
+    .textContainer {
+      text-align: justify;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .aboutContainers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
