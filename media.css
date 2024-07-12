@@ -3,7 +3,7 @@
         display: none;
     }
     #mobile-nav{
-        display: block;
+        display: flex;
     }
     #experiance,
   .expDetailsCon {
