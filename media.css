@@ -1,14 +1,20 @@
 /* Base styles for better cross-device compatibility */
-body, html {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
     width: 100%;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
 #Main-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -163,5 +169,30 @@ footer nav {
     .articleContainer article {
         width: 100%;
         text-align: center;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navLinks li {
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: auto;
+        margin-bottom: 6rem;
+    }
+
+    .aboutContainer {
+        flex-wrap: wrap;
+    }
+
+    #contact, 
+    #projects {
+        height: auto;
     }
 }
