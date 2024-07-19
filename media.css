@@ -179,6 +179,42 @@ footer nav {
     .navLinks li {
         margin: 0.5rem 0;
     }
+
+    .expDetailsCon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expDetailsCon .aboutContainer {
+        width: 100%;
+    }
+
+    .expDetailsCon .detailsContainer {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .expDetailsCon .articleContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .expDetailsCon .articleContainer article {
+        width: 45%;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .expDetailsCon .expSubTitle {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 1400px) {
