@@ -1,234 +1,69 @@
-/* Base styles for better cross-device compatibility */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    width: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-}
-
-#Main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-#Main-nav .navLinks {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-#mobile-nav {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 1rem;
-}
-
-.hamburgerMenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hamburgerIcon {
-    cursor: pointer;
-}
-
-.menuLinks {
-    display: none;
-    list-style: none;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menuLinks li {
-    margin: 1rem 0;
-}
-
-.profilepic img {
-    width: 100%;
-    max-width: 275px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.sectionText {
-    text-align: center;
-    padding: 1rem;
-}
-
-.btnContainer {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-#socialContainer .icon {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.sectionContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-}
-
-.detailsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-}
-
-.articleContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Experience Section */
 .expDetailsCon {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f1f1f1;
-}
-
-footer nav {
+.expDetailsCon .detailsContainer {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.expDetailsCon .articleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.expDetailsCon .articleContainer article {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.expDetailsCon .expSubTitle {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 /* Media Queries */
-
 @media screen and (max-width: 900px) {
-    #Main-nav {
-        display: none;
-    }
-
-    #mobile-nav {
-        display: flex;
-    }
-
-    .menuLinks {
-        display: flex;
-    }
-
-    .sectionContainer, 
-    .expDetailsCon {
+    .expDetailsCon, .detailsContainer, .articleContainer {
         width: 100%;
+    }
+
+    .expDetailsCon .articleContainer article {
+        width: 100%;
+        margin: 1rem 0;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #profile {
-        padding: 1rem 0;
-    }
-
-    .profilepic img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .sectionText h1 {
-        font-size: 2rem;
-    }
-
-    .sectionText .role {
-        font-size: 1.25rem;
-    }
-
-    .btnContainer {
-        flex-direction: column;
-    }
-
-    .detailsContainer {
-        width: 100%;
-    }
-
-    .articleContainer article {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navLinks {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navLinks li {
-        margin: 0.5rem 0;
-    }
-
-    .expDetailsCon {
+    .expDetailsCon .articleContainer {
         flex-direction: column;
         align-items: center;
-    }
-
-    .expDetailsCon .aboutContainer {
         width: 100%;
-    }
-
-    .expDetailsCon .detailsContainer {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .expDetailsCon .articleContainer {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .expDetailsCon .articleContainer article {
-        width: 45%;
-        margin: 0.5rem;
-        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
     }
 
     .expDetailsCon .expSubTitle {
         text-align: center;
         width: 100%;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: auto;
-        margin-bottom: 6rem;
-    }
-
-    .aboutContainer {
-        flex-wrap: wrap;
-    }
-
-    #contact, 
-    #projects {
-        height: auto;
+        margin-bottom: 1rem;
     }
 }
