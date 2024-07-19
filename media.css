@@ -1,104 +1,167 @@
-@media screen and (max-width: 900px){
-    #Main-nav{
+/* Base styles for better cross-device compatibility */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#Main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#Main-nav .navLinks {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+
+.hamburgerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburgerIcon {
+    cursor: pointer;
+}
+
+.menuLinks {
+    display: none;
+    list-style: none;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuLinks li {
+    margin: 1rem 0;
+}
+
+.profilepic img {
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.sectionText {
+    text-align: center;
+    padding: 1rem;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#socialContainer .icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.articleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expDetailsCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+    #Main-nav {
         display: none;
     }
-    #mobile-nav{
+
+    #mobile-nav {
         display: flex;
     }
-    #experiance,
+
+    .menuLinks {
+        display: flex;
+    }
+
+    .sectionContainer, 
     .expDetailsCon {
-        display: block;
-        margin-top: 2rem;
-    }
-    #profile,
-    .sectionContainer {
-        display: block;
-    }
-    .icon.arrow {
-        display: none;
-    }
-    section,
-    .sectionContainer {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
-    .profilepic {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-    .aboutContainer {
-        margin-top: 0;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-        height: 40vh;
-    }
     #profile {
-        height: 83vh;
-        margin-bottom: 0;
+        padding: 1rem 0;
     }
-    article {
-        font-size: 1rem;
+
+    .profilepic img {
+        max-width: 100%;
+        height: auto;
     }
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .aboutContainer,
-    .contact-info-upper-container,
-    .btnContainer {
-        flex-wrap: wrap;
-    }
-    .contact-info-container {
-        margin: 0;
-    }
-    .contact-info-container p,
-    .navLinks li a {
-        font-size: 1rem;
-    }
-    .expSubTitle {
-        font-size: 1.25rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .navLinks {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
-    .profilepic {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
-    }
-    .role {
-        font-size: 1.25rem;
-    }
-    .name {
+
+    .sectionText h1 {
         font-size: 2rem;
     }
-    .textContainer {
-        text-align: justify;
-    }
-}
 
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
+    .sectionText .role {
+        font-size: 1.25rem;
     }
-    .aboutContainer {
-        flex-wrap: wrap;
+
+    .btnContainer {
+        flex-direction: column;
     }
-    #contact,
-    #projects {
-        height: fit-content;
+
+    .detailsContainer {
+        width: 100%;
+    }
+
+    .articleContainer article {
+        width: 100%;
+        text-align: center;
     }
 }
